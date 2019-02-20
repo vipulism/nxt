@@ -3,5 +3,8 @@
     "name": "nextjs",
     "builds": [
         { "src": "package.json", "use": "@now/static-build" }
-    ]
+    ],
+    "scripts":{
+        "now-build": "next build && next export -o dist"
+    }
 }
